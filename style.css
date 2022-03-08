@@ -1,0 +1,308 @@
+/* Custom Properties for Color Scheme + Fonts */
+:root {
+    --color-primary-1: #e3e7b1ff;
+    --color-primary-2: #dfd8f1ff;
+
+    --color-alt-1: #AF90A9;
+    --color-alt-2: #40183fff;
+    --color-alt-3: #4d4d16ff;
+
+    --color-white: #fff;
+    --color-black: #000;
+    --color-darkgrey: #555555;
+    --color-lightgrey: #999999;
+
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-accent: 'Playfair Display', serif;
+
+
+}
+
+/* Set Standard Font Styling */
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+/* Reset Margins */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+/* Navbar CSS */
+.navbar ul {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    padding-right: 1em;
+    gap: 1em 3em;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    outline: none;
+    font-family: var(--ff-primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-weight: 800;
+    color: var(--color-black);
+    transition: .35s;
+}
+
+.navbar ul li a:hover {
+    color: var(--color-alt-2)
+}
+
+@media (max-width: 821px) {
+    .navbar ul {
+        flex-direction: column;
+        padding-bottom: 3em;
+    }
+}
+
+/* Header Font Styling */
+h1 {
+    font-family: var(--ff-accent);
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 1;
+}
+
+h2 {
+    font-family: var(--ff-accent);
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+/* Font Spacing */
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
+.header-tag {
+    text-align: left;
+    padding-top: 3em;
+}
+
+/* Image Rules */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Section Spacing */
+header {
+    padding: 15rem 0;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+
+@media (min-width: 40em) {
+    section {
+        padding: 7rem 0;
+    }
+}
+
+@media (min-width: 40em) {
+    header {
+        padding: 20rem 0;
+    }
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 75rem);
+}
+
+/* Flexbox for Split Class */
+.split {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fleximg img {
+    max-width: 13em;
+    min-width: 10em;
+    padding: 2em 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media Queries for Flexbox Rules */
+@media (min-width: 821px) {
+    .split {
+        flex-direction: row;
+
+    }
+
+    .split>* {
+        flex-basis: 100%;
+    }
+
+    .split>*+* {
+        margin-left: 2em;
+    }
+}
+
+
+/* Section Colors */
+.bg-header {
+    color: var(--color-black);
+    background-color: var(--color-primary-1);
+    /* Mesh background generated at: https://meshgradient.in/ */
+    background-image: url(img/mesh.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.bg-header p {
+    color: var(--color-darkgrey);
+}
+
+
+.section1 {
+    color: var(--color-black);
+    background-color: var(--color-primary-2);
+}
+
+
+.section1 p {
+    color: var(--color-darkgrey);
+}
+
+.section2 {
+    color: var(--color-black);
+    background-color: var(--color-primary-1);
+}
+
+.section2 p {
+    color: var(--color-darkgrey);
+}
+
+.section3 {
+    color: var(--color-white);
+    background-color: var(--color-alt-2);
+}
+
+.footer {
+    color: var(--color-white);
+    background-color: var(--color-alt-3);
+}
+
+/* Surname Reveal Mouseover */
+.reveal {
+    opacity: 0;
+    transition: 1s;
+}
+
+.bg-header h1:hover .reveal {
+    opacity: 1;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.blog_post {
+    padding: 3rem 3rem 3rem 3rem;
+    background: #fff;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1149px) {
+    .blog_post {
+        max-width: 300px;
+    }
+}
+
+.blog-date {
+    margin: 0 0 0.5rem 0;
+    color: var(--color-lightgrey);
+    font-size: 1.25rem;
+    font-family: var(--ff-primary);
+}
+
+.blog-title {
+    margin: 0 0 1rem 0;
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: var(--color-alt-3);
+}
+
+.blog-blurb {
+    margin: 0 0 4.5rem 0;
+    font-size: 1rem;
+    color: var(--color-black);
+    font-family: var(--ff-primary);
+}
+
+.btn_primary {
+    border: none;
+    outline: none;
+    background: var(--color-alt-3);
+    padding: 1.5rem 2rem;
+    border-radius: 50px;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* .btn_primary:hover {
+    box-shadow: 0px 5px 1rem rgba(0, 0, 0, 0.5);
+  } */
+
+
+.proicons {
+    max-width: 2.5em;
+}
+
+.footericons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footer-copyright {
+    color: #999;
+    font-size: 0.75em;
+    margin-top: 1em;
+    text-align: center;
+
+}
+
+.toparrow {
+  display: absolute;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-top: 4em;
+}
