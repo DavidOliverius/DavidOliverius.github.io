@@ -1,7 +1,7 @@
 # T1A2 - Portfolio Website Assignment - Coder Academy
 ## David Oliverius - Melbourne, Web Dev Standard 2022
-#### Project URL:
-#### Github URL:
+#### Project URL: https://davidoliverius.github.io/
+#### Github URL: https://github.com/DavidOliverius/DavidOliverius.github.io
 ---
 
 ## Purpose
