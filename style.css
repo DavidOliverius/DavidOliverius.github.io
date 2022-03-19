@@ -186,6 +186,10 @@ footer {
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
+    /* Mobile Safari Compatibility */
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .bg-header p {
