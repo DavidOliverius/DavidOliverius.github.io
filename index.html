@@ -1,99 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="David Oliverius' personal Web Development Portfolio, handmade with love.">
     <title>David Oliverius Portfolio</title>
+    <link rel="icon" type="image/ico" sizes="16x16" href="/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand:wght@700&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <!-- HTML VALIDATOR FAILS ON LINES 60 AND 110 BECAUSE IT REQUIRES HEADINGS AFTER EACH SECTION/ARTICLE TAG - DOESN'T RECOGNISE MY H2 SECTION HEADERS -->
+
 </head>
+
 <body>
 
+    <!-- NAVBAR COMPONENT -->
     <nav>
         <div class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#blogs">Blogs</a></li>
-        
-            </ul> 
+
+            </ul>
 
         </div>
-
     </nav>
 
     <header class="bg-header">
         <div class="container">
+            <!-- H1 TEXT COMPONENT (only used here for welcome splash page) -->
             <h1>Hi, my name is David <span class="reveal">Oliverius</span></h1>
-            <p class="header-tag">Aspiring Web Dev, Television Post-Production Expert</p>
-            
+            <!-- H3 TEXT COMPONENT (only used here under H1 component) -->
+            <h3 class="header-tag">Aspiring Web Dev, Television Post-Production Expert</h3>
+
         </div>
-        
+
     </header>
-    
-    
-    <a id="work"></a> 
 
+    <!-- ID FOR NAVBAR REFERENCE -->
+    <span id="work"></span>
+
+    <!-- SECTION COMPONENT (defines bg colour and spacing) -->
     <section class="section1">
-        
+
         <div class="container">
-            <h2 >Work/Study History</h2>
-            <div class="split">
+            <!-- H2 TEXT COMPONENT (using accent font and bigger size) -->
+            <h2>Work History</h2>
+
+            <!-- SPLIT CLASS DEFINES FLEXBOX RULES -->
+            <!-- MAIN_ARTICLE CLASS SETS TEXT-JUSTIFY RULES -->
+            <article class="split main_article">
+
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae optio eum autem aut explicabo a facere nulla molestias eos ut cupiditate reiciendis eveniet, suscipit quibusdam.</p>
+                    <p>Working for years in television as an Assistant Editor has given me the opportunity to be a part
+                        of many exciting projects over my career. Always with an eye to improve the process and think of
+                        a more efficient workflow, I’ve learnt how to efficiently manage all the data that comes with
+                        large television programs, from the start of production all the way through to the delivery of
+                        final episodes. </p>
+
+                    <p>In my most recent role as<em> Supervising Technical Producer</em> on <em>The Real Housewives of
+                            Melbourne</em>, it
+                        was my responsibility to oversee the ‘rushes’ on the show from the day it was shot - data
+                        wrangling and verifying the processing of the footage, organising the footage and syncing all
+                        audio/video, then passing it onto teams of editors and post-producers to put the episodes
+                        together.</p>
                 </div>
                 <div>
-                    <p>Illum vero omnis corporis quasi, repudiandae ipsam tempora dignissimos, architecto modi deleniti qui. Corporis culpa consequuntur sequi nisi molestiae ut placeat mollitia reprehenderit consequatur laboriosam.</p>
+                    <p>Due to the Covid-19 pandemic everybody was working from home so we used Avid on Demand
+                        and edited every episode in the cloud. Every member of the team had their own VM hosted on
+                        Microsoft Azure servers which was booted up every morning while I managed the uploading of all
+                        the footage so scenes could be shot on one day and cut the next.</p>
+
+                    <p>Finally, when episodes were
+                        completed it was my job meticulously go through every episode and connect the low-resolution
+                        edit with the original high-resolution footage in <em>DaVinci Resolve</em>, before it was
+                        delivered to a
+                        Post-Production house for colour grading and delivery.</p>
+
+                    <p> Some of the <a href="img/resume.pdf" target="_blank">other projects</a> I've worked on are shows
+                        such as <em>Grand Designs Australia</em> and
+                        <em>Masterchef Australia</em>.</p>
                 </div>
+            </article>
+
+            <!-- BACK TO TOP ARROW COMPONENT -->
+            <div class="toparrowcontainer">
+
+                <a href="#"><img class="toparrow" src="img/uparrow.webp" alt="Back to Top" /></a>
+
             </div>
-
-            <a href="#"><img class="toparrow" src="img/uparrow.png"/></a>
         </div>
-    </section>  
+    </section>
 
-    <a id="skills"></a>
+    <span id="skills"></span>
 
     <section class="section2">
         <div class="container">
 
+            <h2>Skills</h2>
 
+            <article class="split main_article">
 
-            <div class="split">
 
                 <div>
-                    <h2>Skills</h2>
-                    <p>After almost 10 years experience as an Assitant Editor, I have become very proficient in two of
-                        the most powerful pieces of software in post production - <i>Avid Media Composer</i> and <i>DaVinci
-                            Resolve</i>. </p> 
-                            
-                    <p><i>Avid Media Composer</i> is the de facto NLE
+
+                    <p>After almost 10 years experience as an Assistant Editor, I have become very proficient in two of
+                        the most powerful pieces of software in post production - <em>Avid Media Composer</em> and
+                        <em>DaVinci
+                            Resolve</em>. </p>
+
+                    <p><em>Avid Media Composer</em> is the de facto NLE
                         (non-linear editor) around the world and is used extensively throughout Hollywood. It is the
                         only
                         editing software able to support large teams working on projects together, and I have extensive
                         experience in setting up those environments for large teams of editors and post producers.</p>
 
-                    <p><i>DaVinci Resolve</i> has taken the over the Colour Grading space within video and is the
-                        industry standard for 'finishing' projects. Developed in Melbourne by <i>BlackMagic Design</i>,
+                    <p><em>DaVinci Resolve</em> has taken over the Colour Grading space within video and is the
+                        industry standard for 'finishing' projects. Developed in Melbourne by <em>BlackMagic
+                            Design</em>,
                         you would be hard pressed to find any television series or film being released without having
                         gone through Resolve first.</p>
                 </div>
 
 
                 <div class="fleximg">
-                    <img src="img/resolve.png" alt="DaVinci Resolve">
-                    <img src="img/avid.png" alt="Avid">
+                    <img src="img/resolve.webp" alt="DaVinci Resolve">
+                    <img src="img/avid.webp" alt="Avid">
                 </div>
+            </article>
+            <div class="toparrowcontainer">
+
+                <a href="#"><img class="toparrow" src="img/uparrow.webp" alt="Back to Top" /></a>
+
             </div>
-            <a href="#"><img class="toparrow" src="img/uparrow.png"/></a>
         </div>
     </section>
 
-    <a id="blogs"></a>
+    <span id="blogs"></span>
 
     <section class="section3">
         <div class="container">
@@ -101,95 +152,92 @@
             <h2>Blogs</h2>
             <div class="blog-container">
 
-                
 
-                
-                    <div class="blog_post">
-                        <div class="img_pod">
-                        </div>
-                        <div>
-                            <div class="blog-date">12 January 2019</div>
-                            <div class="blog-title">Blog 1</div>
-                            <p class="blog-blurb">The position property specifies the type of positioning method used for an
-                                element
-                                (static, relative, absolute, fixed, or sticky).</p>
-                        </div>
-                        <a class="btn_primary" href='#'>Read More</a>
+
+
+                <div class="blog_post">
+
+                    <div>
+                        <div class="blog-date">11 March 2022</div>
+                        <div class="blog-title">Coffee</div>
+                        <p class="blog-blurb">Iced robusta, single shot caramelization cinnamon spoon breve. Fair trade
+                            bar robust aroma cup kopi-luwak galão organic.</p>
                     </div>
-                    <div class="blog_post">
-                        <div class="img_pod">
-                        </div>
-                        <div>
-                            <div class="blog-date">12 January 2019</div>
-                            <div class="blog-title">Blog 2</div>
-                            <p class="blog-blurb">The position property specifies the type of positioning method used
-                                for an element
-                                (static, relative, absolute, fixed, or sticky).</p>
-                        </div>
-                        <a class="btn_primary" href='#'>Read More</a>
+                    <a class="btn_primary" href='blog1.html'>Read More</a>
+                </div>
+                <div class="blog_post">
+
+                    <div>
+                        <div class="blog-date">20 February 2022</div>
+                        <div class="blog-title">Melbourne</div>
+                        <p class="blog-blurb">Graffiti warehouse chic, spring racing carnival the melbourne cup secret
+                            laneway bars black is alway in fashion the storm.</p>
                     </div>
-                    <div class="blog_post">
-                        <div class="img_pod">
-                        </div>
-                        <div>
-                            <div class="blog-date">12 January 2019</div>
-                            <div class="blog-title">Blog 3</div>
-                            <p class="blog-blurb">The position property specifies the type of positioning method used
-                                for an element
-                                (static, relative, absolute, fixed, or sticky).</p>
-                        </div>
-                        <a class="btn_primary" href='#'>Read More</a>
+                    <a class="btn_primary" href='blog2.html'>Read More</a>
+                </div>
+                <div class="blog_post">
+
+                    <div>
+                        <div class="blog-date">13 December 2021</div>
+                        <div class="blog-title">Grampians</div>
+                        <p class="blog-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="blog_post">
-                        <div class="img_pod">
-                        </div>
-                        <div>
-                            <div class="blog-date">12 January 2019</div>
-                            <div class="blog-title">Blog 4</div>
-                            <p class="blog-blurb">The position property specifies the type of positioning method used
-                                for an element
-                                (static, relative, absolute, fixed, or sticky).</p>
-                        </div>
-                        <a class="btn_primary" href='#'>Read More</a>
+                    <a class="btn_primary" href='blog3.html'>Read More</a>
+                </div>
+                <div class="blog_post">
+
+                    <div>
+                        <div class="blog-date">23 February 2021</div>
+                        <div class="blog-title">Wilsons Promontory</div>
+                        <p class="blog-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="blog_post">
-                        <div class="img_pod">
-                        </div>
-                        <div>
-                            <div class="blog-date">12 January 2019</div>
-                            <div class="blog-title">Blog 5</div>
-                            <p class="blog-blurb">The position property specifies the type of positioning method used
-                                for an element
-                                (static, relative, absolute, fixed, or sticky).</p>
-                        </div>
-                        <a class="btn_primary" href='#'>Read More</a>
+                    <a class="btn_primary" href='blog4.html'>Read More</a>
+                </div>
+                <div class="blog_post">
+
+                    <div>
+                        <div class="blog-date">15 January 2021</div>
+                        <div class="blog-title">Mount Feathertop</div>
+                        <p class="blog-blurb">Elit scelerisque mauris pellentesque pulvinar pellentesque habitant
+                            morbi tristique senectus.</p>
                     </div>
-                
+                    <a class="btn_primary" href='blog5.html'>Read More</a>
+                </div>
+
 
 
             </div>
-            <a href="#"><img class="toparrow" src="img/uparrow.png"/></a>
+            <div class="toparrowcontainer">
+
+                <a href="#"><img class="toparrow" src="img/uparrow.webp" alt="Back to Top" /></a>
+
+            </div>
         </div>
     </section>
 
-    <section class="footer">
+    <footer class="footer">
         <div class="container">
 
             <div class="footericons">
 
-                <a href="mailto:oliveriusdavid+portfolio@gmail.com"> <img class="proicons" src="img/mail.png" alt="email"> </a>
-                
-                <a href="https://www.linkedin.com/in/david-oliverius" target="_blank"> <img class="proicons" src="img/linkedin.png"
-                        alt="linkedin"> </a>
+                <a href="mailto:oliveriusdavid+portfolio@gmail.com"> <img class="proicons" src="img/mail.webp"
+                        alt="email"> </a>
 
-                <a href="https://github.com/DavidOliverius" target="_blank"> <img class="proicons" src="img/github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/david-oliverius" target="_blank"> <img class="proicons"
+                        src="img/linkedin.webp" alt="linkedin"> </a>
 
-               
+                <a href="https://github.com/DavidOliverius" target="_blank"> <img class="proicons" src="img/github.webp"
+                        alt="github"></a>
+
+
 
             </div>
 
-            <p class="footer-copyright">© 2022 David Oliverius</p>
+            <div class="footer-copyright">© 2022 David Oliverius</div>
         </div>
-    </section>
+    </footer>
 </body>
+
 </html>
